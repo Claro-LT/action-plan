@@ -16,7 +16,7 @@ outputs:
     description: "The generated matrix."
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://ghcr.io/Claro-LT/action-plan:master"
   env:
     INPUT_PLAN_FILE: ${{ inputs.plan-file }}
     INPUT_PLAN: ${{ inputs.plan }}
